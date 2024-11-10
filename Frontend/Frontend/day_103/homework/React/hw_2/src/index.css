@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background: rgb(53, 54, 54);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header p {
+    color: white;
+    font-weight: bold;
+}
+
+header p:nth-of-type(2) {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+img {
+    width: 40%;
+    align-self: center;
+    border-radius: 10px;
+}
+
+article {
+    border-top: 1px solid cadetblue;
+    padding: 15px;
+    width: 97.5%;
+    height: 60%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+.flex-container button {
+    width: 135px;
+    height: 35px;
+    background: forestgreen;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: transform 1s ease;
+}
+
+.flex-container button:hover {
+    transform: scale(1.05);
+}
+
+.flex-container button:nth-of-type(2) {
+    background: crimson;
+}
+
+footer {
+    align-self: center;
+    width: 95%;
+    height: 60px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.options {
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.options:nth-of-type(2) {
+    background: cornflowerblue;
+    color: rgb(255, 255, 255);
+}

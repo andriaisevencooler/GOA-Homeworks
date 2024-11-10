@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <p>If you click me, i will dissapear (refresh page to me to reappear)</p>
+
+        <script>
+
+            let text = document.querySelectorAll("p")[0]
+
+            text.addEventListener('click', () => {
+                text.remove()
+            })
+
+        </script>
+    </body>
+</html>

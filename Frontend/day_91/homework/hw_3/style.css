@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+header {
+    width: 100%;
+    height: 62px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid black;
+    gap: 50px;
+}
+
+#searchBar {
+    border: 2px solid #ccc;
+    width: 300px;
+    height: 30px;
+    padding-left: 50px;
+    background-image: url(images/searchIcon.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 600;
+}
+
+#searchBar:focus {
+    animation-name: inputAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes inputAnimation {
+    0% {
+        border: 2px solid #ccc;
+    }
+
+    25% {
+        border: 2px solid black;
+    }
+
+    50% {
+        border: 2px solid #ccc;
+    }
+
+    75% {
+        border: 2px solid black;
+    }
+
+    100% {
+        border: 2px solid #ccc;
+    }
+}
+
+#accountDiv {
+    margin-left: auto;
+    height: 100%;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.links,
+.links1 {
+    color: blue;
+    cursor: pointer;
+}
+
+.links:hover {
+    text-decoration: 1px underline;
+}
+
+main {
+    width: 99%;
+    height: 190px;
+    background: lightgray;
+    margin: 7px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+article {
+    padding: 10px;
+    width: 100%;
+    height: 381px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.cards {
+    width: 300px;
+    height: 250px;
+    background: lightgray;
+    border-radius: 10px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    article {
+        flex-direction: column;
+        width: 100%;
+        height: 800px;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 721px) {
+    .links {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #searchBar {
+        display: none;
+    }
+
+    main {
+        background: none;
+        border: none;
+    }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator - Frontend Mentor</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    </head>
+    <body id="background">
+
+        <div id="themeNumsDiv">
+
+            <div id="themeNumbers">
+
+                <p class="font" draggable="true" id="one">1</p>
+                <p class="font" draggable="true" id="two">2</p>
+                <p class="font" draggable="true" id="three">3</p>
+
+            </div>
+
+        </div>
+        
+        <div id="calculator">
+
+            <header>
+                <div id="toggleDiv">
+
+                        <input type="radio" name="themes" id="theme-1" class="inputStyle">
+                        <input type="radio" name="themes" id="theme-2" class="inputStyle">
+                        <input type="radio" name="themes" id="theme-3" class="inputStyle">
+
+                </div>
+                <p id="themeText" class="font" draggable="true">THEME</p>
+                <p class="font" id="title" draggable="true">calc</p>
+                
+            </header>
+
+            <article>
+
+                <p id="display" class="font" draggable="true"></p>
+
+            </article>
+
+            <main>
+
+                <div id="child1" class="grid-keys" onclick="appendToDisplay('7')">
+
+                    <p class="font" draggable="true">7</p>
+
+                </div>
+
+                <div id="child2" class="grid-keys" onclick="appendToDisplay('8')">
+
+                    <p class="font" draggable="true">8</p>
+                    
+
+                </div>
+
+                <div id="child3" class="grid-keys" onclick="appendToDisplay('9')">
+
+                    <p class="font" draggable="true">9</p>
+
+                </div>
+
+                <div id="child4" class="grid-keys" onclick="appendToDisplay('DEL')">
+
+                    <p class="font" draggable="true">DEL</p>
+                    
+                </div>
+
+                <div id="child5" class="grid-keys" onclick="appendToDisplay('4')">
+
+                    <p class="font" draggable="true">4</p>
+                    
+                </div>
+
+                <div id="child6" class="grid-keys" onclick="appendToDisplay('5')">
+
+                    <p class="font" draggable="true">5</p>
+                    
+                </div>
+
+                <div id="child7" class="grid-keys" onclick="appendToDisplay('6')">
+
+                    <p class="font" draggable="true">6</p>
+                    
+                </div>
+                
+                <div id="child8" class="grid-keys" onclick="appendToDisplay('+')">
+
+                    <p class="font" draggable="true">+</p>
+                    
+                </div>
+
+                <div id="child9" class="grid-keys" onclick="appendToDisplay('1')">
+
+                    <p class="font" draggable="true">1</p>
+                    
+                </div>
+
+                <div id="child10" class="grid-keys" onclick="appendToDisplay('2')">
+
+                    <p class="font" draggable="true">2</p>
+                    
+                </div>
+
+                <div id="child11" class="grid-keys" onclick="appendToDisplay('3')">
+
+                    <p class="font" draggable="true">3</p>
+                    
+                </div>
+
+                <div id="child12" class="grid-keys" onclick="appendToDisplay('-')">
+
+                    <p class="font" draggable="true">-</p>
+                    
+                </div>
+
+                <div id="child13" class="grid-keys" onclick="appendToDisplay('.')">
+
+                    <p class="font" draggable="true">.</p>
+
+                </div>
+
+                <div id="child14" class="grid-keys" onclick="appendToDisplay('0')">
+
+                    <p class="font" draggable="true">0</p>
+
+                </div>
+
+                <div id="child15" class="grid-keys" onclick="appendToDisplay('/')">
+
+                    <p class="font" draggable="true">/</p>
+
+                </div>
+
+                <div id="child16" class="grid-keys" onclick="appendToDisplay('*')">
+
+                    <p class="font" draggable="true">x</p>
+
+                </div>
+
+                <div id="child17" class="grid-keys" onclick="clearDisplay()">
+
+                    <p class="font" draggable="true">RESET</p>
+                    
+                </div>
+
+                <div id="child18" class="grid-keys" onclick="calculate()">
+
+                    <p class="font" draggable="true">=</p>
+                    
+                </div>
+
+            </main>
+
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

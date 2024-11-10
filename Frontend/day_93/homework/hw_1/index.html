@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: chocolate;
+        }
+
+        .container-div {
+            width: 400px;
+            height: 400px;
+            padding: 0;
+            position: relative;
+            background: chartreuse;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background: darkcyan;
+            border: 1px solid black;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-div">
+        <h1>Andria Gaduahvili</h1>
+        <div class="circle"></div>
+    </div>
+    <script>
+        window.onload = () => {
+            const circle = document.querySelector('.circle');
+            let t = setInterval(move,)
+            let pos = 0;
+            let posY = 0;
+
+            function move() {
+                if (pos < 315 && posY === 0) {
+                    pos++;
+                    circle.style.left = `${pos}px`;
+                } else if (posY < 315 && pos === 315) {
+                    posY++;
+                    circle.style.top = `${posY}px`;
+                } else if (pos > 0 && posY === 315) {
+                    pos--;
+                    circle.style.left = `${pos}px`;
+                } else if (posY > 0 && pos === 0) {
+                    posY--;
+                    circle.style.top = `${posY}px`;
+                } else {
+                    clearInterval(t);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
