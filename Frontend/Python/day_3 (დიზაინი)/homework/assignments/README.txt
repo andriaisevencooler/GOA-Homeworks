@@ -1,1 +1,0 @@
-Today, we had no Homework because we met Design Course, It was EPIC!
